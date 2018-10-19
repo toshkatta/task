@@ -6,7 +6,7 @@
   "scripts": {
     "build": "react-scripts build",
     "dev": "react-scripts start",
-    "start": "node index.js"
+    "start": "PORT=3000 react-scripts start"
   },
   "author": "Alexander Ivanov",
   "license": "Copyright (R) Real Time Games Development Ltd.",

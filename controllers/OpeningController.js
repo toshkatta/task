@@ -25,8 +25,6 @@ module.exports = {
     },
     async getOpeningById(req, res) {
         try {
-            console.log('by id params: ', req.params)
-            console.log('by id query: ', req.query)
             const opening = await Opening.findById(req.params.id)
             res.send(opening.get({ plain: true }))
         } catch (err) {

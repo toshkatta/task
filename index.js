@@ -43,7 +43,7 @@ sequelize
     })
 
 sequelize.sync({
-    force: true,
+    // force: true,
     logging: console.log
 })
     .then(() => {
