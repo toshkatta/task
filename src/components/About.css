@@ -1,0 +1,22 @@
+.About {
+    grid-template-columns: auto 300px;
+    column-gap: 30px;
+}
+
+h1 {
+    font-size: 60px;
+    grid-column: 1;
+    border-bottom: 5px solid #323D4F;
+    color: #A02534;
+}
+
+p {
+    grid-column: 1;
+}
+
+img {
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column: 2;
+    align-self: center;
+}

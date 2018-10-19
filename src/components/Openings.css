@@ -1,0 +1,14 @@
+.Openings {
+    grid-auto-columns: 300px;
+    column-gap: 30px;
+}
+
+.Openings h2 {
+    font-size: 42px;
+    border-bottom: 3px solid #323D4F;
+}
+
+.Openings li {
+    list-style-type: none;
+    font-size: 30px;
+}
