@@ -14,10 +14,6 @@ require('dotenv').config()
 // const router = express.Router();
 const app = express();
 
-app.use('/employees', employees)
-app.use('/openings', openings)
-app.use('/seed', seed)
-
 const whitelist = ['http://localhost:3000']
 const corsOptions = {
     origin: function (origin, callback) {
@@ -30,6 +26,10 @@ const corsOptions = {
 }
 
 app.use(cors(corsOptions));
+
+app.use('/api/employees', employees)
+app.use('/api/openings', openings)
+app.use('/seed', seed)
 
 app.use(express.static("build"));
 
