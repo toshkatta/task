@@ -24,11 +24,5 @@ module.exports = (sequelize, DataTypes) => {
             timestamps: false
         })
 
-    // Employee.bulkCreate(seed, { fields: ['name', 'picture', 'big'], validate: true }).catch(err => {
-    //     console.log('* error in bulk create employees', err)
-    // }).then(() => {
-    //     console.log('* bulk create employees finished')
-    // })
-
     return Employee
 }
