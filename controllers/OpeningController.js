@@ -17,7 +17,7 @@ module.exports = {
     },
     async getOpenings(req, res) {
         try {
-            const openings = await Opening.findAll({ order: [['title', 'ASC']] })
+            const openings = await Opening.findAll()
             res.send(openings)
         } catch (err) {
             res.status(500).send(err)

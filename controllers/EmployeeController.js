@@ -20,7 +20,7 @@ module.exports = {
     },
     async getEmployees(req, res) {
         try {
-            const employees = await Employee.findAll({ order: [['name', 'ASC']] })
+            const employees = await Employee.findAll()
             res.send(employees)
         } catch (err) {
             res.status(500).send(err)

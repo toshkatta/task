@@ -18,6 +18,10 @@ class Api {
     static getOpenings() {
         return Api.request('openings');
     }
+
+    static getOpeningDescription(id) {
+        return Api.request(`openings/${id}`);
+    }
 }
 
 export default Api;

@@ -8,7 +8,7 @@
 }
 
 .App-header {
-  background-color: #222;
+  background-color: #323D4F;
   height: 150px;
   padding: 20px;
   color: white;
@@ -25,4 +25,31 @@
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+.navbar {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  background-color: #323D4F;
+}
+
+a {
+  justify-self: center;
+  margin: 1em 0;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+a, a:visited, a:link, a:hover, a:active, a:focus {
+  text-decoration: none;
+  color: #C8CEC2;
+}
+
+a.accent {
+  color: #A02534;
+  justify-self: end;
+}
+
+.justify-left {
+  justify-self: left;
 }
