@@ -45,7 +45,7 @@ class Opening extends Component {
 
 
     render() {
-        const { id, title, selected } = this.state;
+        const { title, selected } = this.state;
         return (
             <li onClick={this.handleClick} className={selected ? 'selected' : ''}>{title}</li>
         );

@@ -1,0 +1,26 @@
+@import '../../index.less';
+
+.About {
+    grid-column: @grid-max;
+    grid-template-columns: @grid-columns-auto;
+    column-gap: @column-gap;
+    background: @primary
+}
+
+h1 {
+    font-size: @large-font-size;
+    grid-column: 1;
+    border-bottom: 5px solid @secondary;
+    color: @secondary;
+}
+
+p {
+    grid-column: 1;
+}
+
+img {
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column: 2;
+    align-self: center;
+}

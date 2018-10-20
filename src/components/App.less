@@ -1,0 +1,57 @@
+@import '../index.less';
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: @secondary;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.navbar {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  background-color: @secondary;
+}
+
+a {
+  justify-self: center;
+  margin: 1em 0;
+  font-weight: bold;
+  font-size: @link-font-size;
+
+  &:visited, &:link, &:hover, &:active, &:focus {
+    text-decoration: none;
+    color: @primary;
+  }
+  
+  &.accent {
+    color: @accent;
+    justify-self: end;
+  }
+}
+
+.justify-left {
+  justify-self: left;
+}
