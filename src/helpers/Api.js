@@ -1,3 +1,6 @@
+//Needed for tests
+require('isomorphic-fetch')
+
 class Api {
     static request(uri) {
         return fetch(`http://localhost:8000/api/${uri}`, {
