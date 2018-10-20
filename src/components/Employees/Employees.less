@@ -69,3 +69,19 @@
         }
     }
 }
+
+@media screen and (max-width: 800px) {
+    .Employees {
+        grid-template-columns: 1fr;
+
+        .big {
+            grid-column: 1;
+            display: block;
+            justify-self: center
+        }
+
+        .small {
+            grid-template-columns: 1fr;
+        }
+    }
+}

@@ -36,11 +36,11 @@ class Openings extends Component {
 
   hideDescription() {
     this.setState({
+      description: '',
       openings: this.state.openings.map(opening => {
         opening.selected = false;
         return opening;
-      }),
-      description: ''
+      })
     })
   }
 

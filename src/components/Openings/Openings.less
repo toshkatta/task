@@ -32,3 +32,17 @@
         padding: 2em;
     }
 }
+
+@media screen and (max-width: 800px) {
+    .Openings {
+        grid-template-columns: 1fr;
+
+        h2, ul, article {
+            grid-column: 1;
+        }
+
+        article {
+            display: none;
+        }
+    }
+}

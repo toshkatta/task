@@ -47,7 +47,10 @@ class Opening extends Component {
     render() {
         const { title, selected } = this.state;
         return (
-            <li onClick={this.handleClick} className={selected ? 'selected' : ''}>{title}</li>
+            <React.Fragment>
+                <li onClick={this.handleClick} className={selected ? 'selected' : ''}>{title}</li>
+                {this.state.selected && <article className='showResponsive'>{this.props.description}</article>}
+            </React.Fragment>
         );
     }
 }

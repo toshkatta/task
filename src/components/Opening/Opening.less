@@ -4,3 +4,14 @@
     background: @secondary;
     color: @primary;
 }
+
+ul>article.showResponsive {
+    display: none;
+}
+
+@media screen and (max-width: 800px) {
+    ul>article.showResponsive {
+        display: flex;
+        padding: 1em;
+    }
+}
