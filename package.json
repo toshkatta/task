@@ -6,8 +6,8 @@
   "scripts": {
     "build": "run-s -n build-css build-js",
     "build-js": "react-scripts build",
-    "test": "run-s -n build-css test-js",
-    "test-js": "react-scripts test --env=jsdom",
+    "test": "jest",
+    "test-js": "jest",
     "build-css": "node-less-chokidar src",
     "watch-css": "node-less-chokidar src --watch",
     "dev": "react-scripts start",
@@ -28,5 +28,12 @@
     "react-router-dom": "^4.3.1",
     "react-scripts": "1.1.4",
     "sequelize": "^4.40.0"
+  },
+  "devDependencies": {
+    "babel-jest": "^23.6.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "jest": "^23.6.0",
+    "react-test-renderer": "^16.5.2"
   }
 }
